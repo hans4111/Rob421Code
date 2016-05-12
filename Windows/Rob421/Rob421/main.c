@@ -9,6 +9,8 @@
 //****************************************************************************************************/
 //************Global variables************************************************************************/
  uint8_t PWM_Y = 0;
+ uint8_t PWM_X = 0; 
+ uint16_t EncoderCount = 0;
 
 //****************************************************************************************************/
 //************DEBOUNCE**Takes in button**Returns true if pressed***************************************/
@@ -34,12 +36,18 @@
   void timer2_init(void){             
     TCCR2 |= (1<<WGM21) | (1<<WGM20);  //fast PWM
     TCCR2 |= (1<<COM21) ;              //PB7 output, non Inverted
-    TCCR2 |= (1<<CS22) | (1<<CS20);    //256 prescale (H_bridge, 100k switching max) 16M/256=62.5K
+    TCCR2 |= (1<<CS22) | (1<<CS20);    //1024 prescale (H_bridge, 100k switching max) 16M/1024=15K
     OCR2 = 0xFF;                       //TOP (will spike @ MAX+1 when set to zero) 
     TIMSK |= (1<<TOIE2);               //Enable interupt on overflow ISR(TIMER2_OVF){update OCR2}
   }//Timer2
 
-
+//void timer3_init(void){
+//	TCCR3B |= (1<<WGM31) | (1<<WGM30); //fast pwm
+//	TCCR3B |= (1<<CS32) | (1<<CS30)    //1024 prescale 15k
+//	TCCR3B |= (1<<)
+//	
+//	
+//}
 //****************************************************************************************************/
 //*******SPI_INIT**************************************************************************************/
   
@@ -112,6 +120,14 @@
      
           
   }//ISR
+  //*************************************************************************************************/
+  ISR(INT0_vect)
+  {
+	if(EncoderCount < 65535)
+		EncoderCount++;
+	else
+		EncoderCount = 0;
+  }
 //**************************************************MAIN************************************************/ 
 //***************************************************MAIN***********************************************/
 //****************************************************MAIN**********************************************/
@@ -124,6 +140,13 @@ int main(){
   port_init();           //PORT INIT 
   sei();                 //enable interupts
   PORTB |= (1<<PB5);
+  //portd init for external interrupt PORTD.0 ->> int0 in EIRCA
+  PORTD |= 0x00;
+  DDRD |= 0x00;
+  //External interrupt init
+  EICRA |= 0x03;  //rising edge
+  EIMSK |= 0x01;  //INT0
+  EIFR |= 0x01;   //flag shit
  
   while (1) {
 
