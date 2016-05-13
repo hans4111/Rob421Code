@@ -3,57 +3,57 @@ AP_Robot.elf:     file format elf32-avr
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
-  0 .data         00000000  00800100  000001fa  0000028e  2**0
+  0 .data         00000006  00800100  00000486  0000051a  2**0
                   CONTENTS, ALLOC, LOAD, DATA
-  1 .text         000001fa  00000000  00000000  00000094  2**1
+  1 .text         00000486  00000000  00000000  00000094  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  2 .bss          00000004  00800100  00800100  0000028e  2**0
+  2 .bss          00000009  00800106  00800106  00000520  2**0
                   ALLOC
-  3 .stab         00000990  00000000  00000000  00000290  2**2
+  3 .stab         00000cfc  00000000  00000000  00000520  2**2
                   CONTENTS, READONLY, DEBUGGING
-  4 .stabstr      00000d92  00000000  00000000  00000c20  2**0
+  4 .stabstr      00000dfe  00000000  00000000  0000121c  2**0
                   CONTENTS, READONLY, DEBUGGING
-  5 .comment      00000011  00000000  00000000  000019b2  2**0
+  5 .comment      00000011  00000000  00000000  0000201a  2**0
                   CONTENTS, READONLY
 
 Disassembly of section .text:
 
 00000000 <__vectors>:
    0:	0c 94 46 00 	jmp	0x8c	; 0x8c <__ctors_end>
-   4:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
-   8:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
-   c:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
-  10:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
-  14:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
-  18:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
-  1c:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
-  20:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
-  24:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
-  28:	0c 94 c2 00 	jmp	0x184	; 0x184 <__vector_10>
-  2c:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
-  30:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
-  34:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
-  38:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
-  3c:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
-  40:	0c 94 a6 00 	jmp	0x14c	; 0x14c <__vector_16>
-  44:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
-  48:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
-  4c:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
-  50:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
-  54:	0c 94 d1 00 	jmp	0x1a2	; 0x1a2 <__vector_21>
-  58:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
-  5c:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
-  60:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
-  64:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
-  68:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
-  6c:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
-  70:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
-  74:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
-  78:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
-  7c:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
-  80:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
-  84:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
-  88:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
+   4:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+   8:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+   c:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  10:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  14:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  18:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  1c:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  20:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  24:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  28:	0c 94 d5 00 	jmp	0x1aa	; 0x1aa <__vector_10>
+  2c:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  30:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  34:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  38:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  3c:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  40:	0c 94 c1 00 	jmp	0x182	; 0x182 <__vector_16>
+  44:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  48:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  4c:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  50:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  54:	0c 94 e4 00 	jmp	0x1c8	; 0x1c8 <__vector_21>
+  58:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  5c:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  60:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  64:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  68:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  6c:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  70:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  74:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  78:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  7c:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  80:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  84:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  88:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
 
 0000008c <__ctors_end>:
   8c:	11 24       	eor	r1, r1
@@ -63,320 +63,747 @@ Disassembly of section .text:
   94:	de bf       	out	0x3e, r29	; 62
   96:	cd bf       	out	0x3d, r28	; 61
 
-00000098 <__do_clear_bss>:
-  98:	21 e0       	ldi	r18, 0x01	; 1
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
   9a:	a0 e0       	ldi	r26, 0x00	; 0
   9c:	b1 e0       	ldi	r27, 0x01	; 1
-  9e:	01 c0       	rjmp	.+2      	; 0xa2 <.do_clear_bss_start>
+  9e:	e6 e8       	ldi	r30, 0x86	; 134
+  a0:	f4 e0       	ldi	r31, 0x04	; 4
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a6 30       	cpi	r26, 0x06	; 6
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
 
-000000a0 <.do_clear_bss_loop>:
-  a0:	1d 92       	st	X+, r1
+000000b2 <__do_clear_bss>:
+  b2:	21 e0       	ldi	r18, 0x01	; 1
+  b4:	a6 e0       	ldi	r26, 0x06	; 6
+  b6:	b1 e0       	ldi	r27, 0x01	; 1
+  b8:	01 c0       	rjmp	.+2      	; 0xbc <.do_clear_bss_start>
 
-000000a2 <.do_clear_bss_start>:
-  a2:	a4 30       	cpi	r26, 0x04	; 4
-  a4:	b2 07       	cpc	r27, r18
-  a6:	e1 f7       	brne	.-8      	; 0xa0 <.do_clear_bss_loop>
-  a8:	0e 94 db 00 	call	0x1b6	; 0x1b6 <main>
-  ac:	0c 94 fb 00 	jmp	0x1f6	; 0x1f6 <_exit>
+000000ba <.do_clear_bss_loop>:
+  ba:	1d 92       	st	X+, r1
 
-000000b0 <__bad_interrupt>:
-  b0:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+000000bc <.do_clear_bss_start>:
+  bc:	af 30       	cpi	r26, 0x0F	; 15
+  be:	b2 07       	cpc	r27, r18
+  c0:	e1 f7       	brne	.-8      	; 0xba <.do_clear_bss_loop>
+  c2:	0e 94 6e 01 	call	0x2dc	; 0x2dc <main>
+  c6:	0c 94 41 02 	jmp	0x482	; 0x482 <_exit>
 
-000000b4 <debounce_switch>:
+000000ca <__bad_interrupt>:
+  ca:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+000000ce <debounce>:
 //****************************************************************************************************/
 //************DEBOUNCE**Takes in button**Returns true if pressed***************************************/
  
-  int8_t debounce_switch(uint8_t button) {
-    static uint16_t state = 0; //holds present state 
-    state = (state << 1) | (! bit_is_clear(PINA, button))| 0xE000;
-  b4:	49 b3       	in	r20, 0x19	; 25
-  b6:	20 91 02 01 	lds	r18, 0x0102
-  ba:	30 91 03 01 	lds	r19, 0x0103
-  be:	22 0f       	add	r18, r18
-  c0:	33 1f       	adc	r19, r19
-  c2:	30 6e       	ori	r19, 0xE0	; 224
-  c4:	50 e0       	ldi	r21, 0x00	; 0
-  c6:	02 c0       	rjmp	.+4      	; 0xcc <debounce_switch+0x18>
-  c8:	55 95       	asr	r21
-  ca:	47 95       	ror	r20
-  cc:	8a 95       	dec	r24
-  ce:	e2 f7       	brpl	.-8      	; 0xc8 <debounce_switch+0x14>
-  d0:	41 70       	andi	r20, 0x01	; 1
-  d2:	55 27       	eor	r21, r21
-  d4:	24 2b       	or	r18, r20
-  d6:	35 2b       	or	r19, r21
-  d8:	30 93 03 01 	sts	0x0103, r19
-  dc:	20 93 02 01 	sts	0x0102, r18
-    if (state == 0xF000) return 1;
-  e0:	81 e0       	ldi	r24, 0x01	; 1
-  e2:	21 15       	cp	r18, r1
-  e4:	30 4f       	sbci	r19, 0xF0	; 240
-  e6:	09 f0       	breq	.+2      	; 0xea <debounce_switch+0x36>
-  e8:	80 e0       	ldi	r24, 0x00	; 0
+  int8_t debounce(uint8_t button) {
+    static uint16_t state1 = 0; //holds present state 
+    state1 = (state1 << 1) | ( bit_is_clear(PIND, button))| 0xE000;
+  ce:	40 b3       	in	r20, 0x10	; 16
+  d0:	20 91 0d 01 	lds	r18, 0x010D
+  d4:	30 91 0e 01 	lds	r19, 0x010E
+  d8:	22 0f       	add	r18, r18
+  da:	33 1f       	adc	r19, r19
+  dc:	30 6e       	ori	r19, 0xE0	; 224
+  de:	50 e0       	ldi	r21, 0x00	; 0
+  e0:	02 c0       	rjmp	.+4      	; 0xe6 <debounce+0x18>
+  e2:	55 95       	asr	r21
+  e4:	47 95       	ror	r20
+  e6:	8a 95       	dec	r24
+  e8:	e2 f7       	brpl	.-8      	; 0xe2 <debounce+0x14>
+  ea:	41 70       	andi	r20, 0x01	; 1
+  ec:	55 27       	eor	r21, r21
+  ee:	81 e0       	ldi	r24, 0x01	; 1
+  f0:	48 27       	eor	r20, r24
+  f2:	24 2b       	or	r18, r20
+  f4:	35 2b       	or	r19, r21
+  f6:	30 93 0e 01 	sts	0x010E, r19
+  fa:	20 93 0d 01 	sts	0x010D, r18
+    if (state1 == 0xF000) return 1;
+  fe:	81 e0       	ldi	r24, 0x01	; 1
+ 100:	21 15       	cp	r18, r1
+ 102:	30 4f       	sbci	r19, 0xF0	; 240
+ 104:	09 f0       	breq	.+2      	; 0x108 <debounce+0x3a>
+ 106:	80 e0       	ldi	r24, 0x00	; 0
     return 0;
   }//Debounce
-  ea:	08 95       	ret
+ 108:	08 95       	ret
 
-000000ec <timer0_init>:
- 
-//******************************************************************************************************/
-//*********TIMER0_INIT****CLOCK***********************************************************************/
-  
-  void timer0_init(void){             //timer counter 0 setup, running off 32768 clock
-     ASSR |= (1<<AS0);                //External Crystal
-  ec:	80 b7       	in	r24, 0x30	; 48
-  ee:	88 60       	ori	r24, 0x08	; 8
-  f0:	80 bf       	out	0x30, r24	; 48
-     TIMSK |= (1<<TOIE0);             //enable interrupts
-  f2:	87 b7       	in	r24, 0x37	; 55
-  f4:	81 60       	ori	r24, 0x01	; 1
-  f6:	87 bf       	out	0x37, r24	; 55
-     TCCR0 |= (1<<CS02) | (1<<CS00);  //normal mode, prescale by 128
-  f8:	83 b7       	in	r24, 0x33	; 51
-  fa:	85 60       	ori	r24, 0x05	; 5
-  fc:	83 bf       	out	0x33, r24	; 51
-  fe:	08 95       	ret
-
-00000100 <timer2_init>:
-  }//Timer0
+0000010a <timer2_init>:
+  /*
 //****************************************************************************************************/
 //*********TIMER2_INIT****PWM_Y_AXIS*******************************************************************/
-  
+//***PB7***//  
   void timer2_init(void){             
     TCCR2 |= (1<<WGM21) | (1<<WGM20);  //fast PWM
- 100:	85 b5       	in	r24, 0x25	; 37
- 102:	88 64       	ori	r24, 0x48	; 72
- 104:	85 bd       	out	0x25, r24	; 37
+ 10a:	85 b5       	in	r24, 0x25	; 37
+ 10c:	88 64       	ori	r24, 0x48	; 72
+ 10e:	85 bd       	out	0x25, r24	; 37
     TCCR2 |= (1<<COM21) ;              //PB7 output, non Inverted
- 106:	85 b5       	in	r24, 0x25	; 37
- 108:	80 62       	ori	r24, 0x20	; 32
- 10a:	85 bd       	out	0x25, r24	; 37
-    TCCR2 |= (1<<CS22) | (1<<CS21);    //256 prescale (H_bridge, 100k switching max) 16M/256=62.5K
- 10c:	85 b5       	in	r24, 0x25	; 37
- 10e:	86 60       	ori	r24, 0x06	; 6
- 110:	85 bd       	out	0x25, r24	; 37
-    OCR2 = 0x00;                       //TOP (will spike @ MAX+1 when set to zero) 
- 112:	13 bc       	out	0x23, r1	; 35
-    TIMSK |= (1<<TOIE2);               //Enable interupt on overflow ISR(TIMER2_OVF){update OCR2}
- 114:	87 b7       	in	r24, 0x37	; 55
- 116:	80 64       	ori	r24, 0x40	; 64
- 118:	87 bf       	out	0x37, r24	; 55
- 11a:	08 95       	ret
+ 110:	85 b5       	in	r24, 0x25	; 37
+ 112:	80 62       	ori	r24, 0x20	; 32
+ 114:	85 bd       	out	0x25, r24	; 37
+    TCCR2 |= (1<<CS22) | (1<<CS20);    //1024 prescale (H_bridge, 100k switching max) 16M/15.6K
+ 116:	85 b5       	in	r24, 0x25	; 37
+ 118:	85 60       	ori	r24, 0x05	; 5
+ 11a:	85 bd       	out	0x25, r24	; 37
+    OCR2 = 0xFF;                       //TOP (will spike @ MAX+1 when set to zero) 
+ 11c:	8f ef       	ldi	r24, 0xFF	; 255
+ 11e:	83 bd       	out	0x23, r24	; 35
+    TIMSK |= (1<<TOIE0);               //Enable interupt on overflow ISR(TIMER2_OVF){update OCR2}
+ 120:	87 b7       	in	r24, 0x37	; 55
+ 122:	81 60       	ori	r24, 0x01	; 1
+ 124:	87 bf       	out	0x37, r24	; 55
+ 126:	08 95       	ret
 
-0000011c <spi_init>:
+00000128 <timer0_init>:
+
+//****************************************************************************************************/
+//*********TIMER0_INIT****PWM_X_AXIS*******************************************************************/
+//***PB4***//  
+  void timer0_init(void){             
+    TCCR0 |= (1<<WGM21) | (1<<WGM20);  //fast PWM
+ 128:	83 b7       	in	r24, 0x33	; 51
+ 12a:	88 64       	ori	r24, 0x48	; 72
+ 12c:	83 bf       	out	0x33, r24	; 51
+    TCCR0 |= (1<<COM21) ;              //PB4 output, non Inverted
+ 12e:	83 b7       	in	r24, 0x33	; 51
+ 130:	80 62       	ori	r24, 0x20	; 32
+ 132:	83 bf       	out	0x33, r24	; 51
+    TCCR0 |= (1<<CS22) | (1<<CS20);    //1024 prescale (H_bridge, 100k switching max) 16M/15.6K
+ 134:	83 b7       	in	r24, 0x33	; 51
+ 136:	85 60       	ori	r24, 0x05	; 5
+ 138:	83 bf       	out	0x33, r24	; 51
+    OCR0 = 0xFF;                       //TOP (will spike @ MAX+1 when set to zero) 
+ 13a:	8f ef       	ldi	r24, 0xFF	; 255
+ 13c:	81 bf       	out	0x31, r24	; 49
+    TIMSK |= (1<<TOIE2);               //Enable interupt on overflow ISR(TIMER2_OVF){update OCR2}
+ 13e:	87 b7       	in	r24, 0x37	; 55
+ 140:	80 64       	ori	r24, 0x40	; 64
+ 142:	87 bf       	out	0x37, r24	; 55
+ 144:	08 95       	ret
+
+00000146 <spi_init>:
 //****************************************************************************************************/
 //*******SPI_INIT**************************************************************************************/
   
   void spi_init(void){
     
     DDRB |= (1<< PB0) | (1<< PB1) | (1<<PB2); 
- 11c:	87 b3       	in	r24, 0x17	; 23
- 11e:	87 60       	ori	r24, 0x07	; 7
- 120:	87 bb       	out	0x17, r24	; 23
+ 146:	87 b3       	in	r24, 0x17	; 23
+ 148:	87 60       	ori	r24, 0x07	; 7
+ 14a:	87 bb       	out	0x17, r24	; 23
     SPCR |= (1<< SPE) | (1<< MSTR);
- 122:	8d b1       	in	r24, 0x0d	; 13
- 124:	80 65       	ori	r24, 0x50	; 80
- 126:	8d b9       	out	0x0d, r24	; 13
+ 14c:	8d b1       	in	r24, 0x0d	; 13
+ 14e:	80 65       	ori	r24, 0x50	; 80
+ 150:	8d b9       	out	0x0d, r24	; 13
     SPSR |= (1<< SPI2X);
- 128:	70 9a       	sbi	0x0e, 0	; 14
- 12a:	08 95       	ret
+ 152:	70 9a       	sbi	0x0e, 0	; 14
+ 154:	08 95       	ret
 
-0000012c <port_init>:
+00000156 <port_init>:
 //*****************************************************************************************************/
 //******PORT INIT**************************************************************************************/
 
  void port_init(void){
 
-  DDRB |= (1<<PB7); //PB7 (PWM)
- 12c:	bf 9a       	sbi	0x17, 7	; 23
-  DDRB |= (1<<PB4); //LED4 as output 
- 12e:	bc 9a       	sbi	0x17, 4	; 23
-  DDRA = 0x00;       //set buttons for inputs.  
- 130:	1a ba       	out	0x1a, r1	; 26
-  PORTA = 0xFF;      //Set pullups for buttons
- 132:	8f ef       	ldi	r24, 0xFF	; 255
- 134:	8b bb       	out	0x1b, r24	; 27
- 136:	08 95       	ret
+  DDRB |= (1<<PB6) | (1<<PB5); //6; Ain2, 5; Ain1
+ 156:	87 b3       	in	r24, 0x17	; 23
+ 158:	80 66       	ori	r24, 0x60	; 96
+ 15a:	87 bb       	out	0x17, r24	; 23
+  DDRB |= (1<<PB1);//testcode
+ 15c:	b9 9a       	sbi	0x17, 1	; 23
+  DDRB |= (1<<PB0); //LED4 as output, standby pin on 1.2 amp H-bridge. High-enable
+ 15e:	b8 9a       	sbi	0x17, 0	; 23
+  DDRD = 0x00;       //set buttons for inputs.  
+ 160:	11 ba       	out	0x11, r1	; 17
+  PORTD = 0xFF;      //Set pullups for buttons
+ 162:	8f ef       	ldi	r24, 0xFF	; 255
+ 164:	82 bb       	out	0x12, r24	; 18
+  DDRE &= ~(1<<PE2);       //set Port E for inputs (encoder Y-Axis)
+ 166:	12 98       	cbi	0x02, 2	; 2
+  DDRE &= ~(1<<PE3);       //set Port E for inputs (encoder Y-Axis)
+ 168:	13 98       	cbi	0x02, 3	; 2
+  DDRC = 0x00;       //Set Port C for inputs(mini-beam)
+ 16a:	14 ba       	out	0x14, r1	; 20
+ 16c:	08 95       	ret
 
-00000138 <adc_init>:
+0000016e <adc_init>:
  }//Port_init
 //****************************************************************************************************/
 //******ADC INIT**************************************************************************************/
 
  void adc_init(void){
    ADMUX  |= (1<<REFS0);  //5V reference
- 138:	3e 9a       	sbi	0x07, 6	; 7
+ 16e:	3e 9a       	sbi	0x07, 6	; 7
    ADMUX  |= (1<<ADLAR);  //Left justify
- 13a:	3d 9a       	sbi	0x07, 5	; 7
+ 170:	3d 9a       	sbi	0x07, 5	; 7
    ADCSRA |= (1<<ADEN);   //ADC enable
- 13c:	37 9a       	sbi	0x06, 7	; 6
+ 172:	37 9a       	sbi	0x06, 7	; 6
    ADCSRA |= (1<<ADFR);   //Free Running Mode
- 13e:	35 9a       	sbi	0x06, 5	; 6
+ 174:	35 9a       	sbi	0x06, 5	; 6
    ADCSRA |= (1<<ADIE);   //Interupt enable on conversion complete ISR(ADC) {adc_temp = ADCH;}
- 140:	33 9a       	sbi	0x06, 3	; 6
+ 176:	33 9a       	sbi	0x06, 3	; 6
    ADCSRA |= (1<<ADPS2) | (1<<ADPS1) | (1<<ADPS0);   //Prescale 128
- 142:	86 b1       	in	r24, 0x06	; 6
- 144:	87 60       	ori	r24, 0x07	; 7
- 146:	86 b9       	out	0x06, r24	; 6
+ 178:	86 b1       	in	r24, 0x06	; 6
+ 17a:	87 60       	ori	r24, 0x07	; 7
+ 17c:	86 b9       	out	0x06, r24	; 6
    ADCSRA |= (1<<ADSC);
- 148:	36 9a       	sbi	0x06, 6	; 6
- 14a:	08 95       	ret
+ 17e:	36 9a       	sbi	0x06, 6	; 6
+ 180:	08 95       	ret
 
-0000014c <__vector_16>:
+00000182 <__vector_16>:
  }//ADC_init
 //****************************************************************************************************/
 //*************ISR**CLOCK*****************************************************************************/
   ISR(TIMER0_OVF_vect){
- 14c:	1f 92       	push	r1
- 14e:	0f 92       	push	r0
- 150:	0f b6       	in	r0, 0x3f	; 63
- 152:	0f 92       	push	r0
- 154:	11 24       	eor	r1, r1
- 156:	8f 93       	push	r24
-     static uint8_t j = 0;
-     if(j==9){j=0;}
- 158:	80 91 01 01 	lds	r24, 0x0101
- 15c:	89 30       	cpi	r24, 0x09	; 9
- 15e:	49 f0       	breq	.+18     	; 0x172 <__vector_16+0x26>
- 160:	8f 5f       	subi	r24, 0xFF	; 255
-
-       case(8): {
+ 182:	1f 92       	push	r1
+ 184:	0f 92       	push	r0
+ 186:	0f b6       	in	r0, 0x3f	; 63
+ 188:	0f 92       	push	r0
+ 18a:	11 24       	eor	r1, r1
+ 18c:	8f 93       	push	r24
+   if(PWM_X > 0xC4){PWM_X = 0xC4;} //keep bounds on PWM for saftey!!!!
+ 18e:	80 91 0b 01 	lds	r24, 0x010B
+ 192:	85 3c       	cpi	r24, 0xC5	; 197
+ 194:	18 f0       	brcs	.+6      	; 0x19c <__vector_16+0x1a>
+ 196:	84 ec       	ldi	r24, 0xC4	; 196
+ 198:	80 93 0b 01 	sts	0x010B, r24
+   OCR0 = PWM_X;
+ 19c:	81 bf       	out	0x31, r24	; 49
                  break;}
        default:  break;
      }//switch
     j++;
- 162:	80 93 01 01 	sts	0x0101, r24
- 
+   */
 }//ISR
- 166:	8f 91       	pop	r24
- 168:	0f 90       	pop	r0
- 16a:	0f be       	out	0x3f, r0	; 63
- 16c:	0f 90       	pop	r0
- 16e:	1f 90       	pop	r1
- 170:	18 95       	reti
- 172:	81 e0       	ldi	r24, 0x01	; 1
+ 19e:	8f 91       	pop	r24
+ 1a0:	0f 90       	pop	r0
+ 1a2:	0f be       	out	0x3f, r0	; 63
+ 1a4:	0f 90       	pop	r0
+ 1a6:	1f 90       	pop	r1
+ 1a8:	18 95       	reti
 
-       case(8): {
-                 break;}
-       default:  break;
-     }//switch
-    j++;
- 174:	80 93 01 01 	sts	0x0101, r24
- 
-}//ISR
- 178:	8f 91       	pop	r24
- 17a:	0f 90       	pop	r0
- 17c:	0f be       	out	0x3f, r0	; 63
- 17e:	0f 90       	pop	r0
- 180:	1f 90       	pop	r1
- 182:	18 95       	reti
-
-00000184 <__vector_10>:
+000001aa <__vector_10>:
 //*****************************************************************************************************/
 //*************ISR************************************************************************************/
   ISR(TIMER2_OVF_vect){     //update OCR2 
- 184:	1f 92       	push	r1
- 186:	0f 92       	push	r0
- 188:	0f b6       	in	r0, 0x3f	; 63
- 18a:	0f 92       	push	r0
- 18c:	11 24       	eor	r1, r1
- 18e:	8f 93       	push	r24
+ 1aa:	1f 92       	push	r1
+ 1ac:	0f 92       	push	r0
+ 1ae:	0f b6       	in	r0, 0x3f	; 63
+ 1b0:	0f 92       	push	r0
+ 1b2:	11 24       	eor	r1, r1
+ 1b4:	8f 93       	push	r24
      
       OCR2 = PWM_Y;
- 190:	80 91 00 01 	lds	r24, 0x0100
- 194:	83 bd       	out	0x23, r24	; 35
+ 1b6:	80 91 0c 01 	lds	r24, 0x010C
+ 1ba:	83 bd       	out	0x23, r24	; 35
   
   }//ISR
- 196:	8f 91       	pop	r24
- 198:	0f 90       	pop	r0
- 19a:	0f be       	out	0x3f, r0	; 63
- 19c:	0f 90       	pop	r0
- 19e:	1f 90       	pop	r1
- 1a0:	18 95       	reti
+ 1bc:	8f 91       	pop	r24
+ 1be:	0f 90       	pop	r0
+ 1c0:	0f be       	out	0x3f, r0	; 63
+ 1c2:	0f 90       	pop	r0
+ 1c4:	1f 90       	pop	r1
+ 1c6:	18 95       	reti
 
-000001a2 <__vector_21>:
+000001c8 <__vector_21>:
 //*****************************************************************************************************/
 //*************ISR***ADC_conversion******************************************************************/
   ISR(ADC_vect){     //ADC conversion complete
- 1a2:	1f 92       	push	r1
- 1a4:	0f 92       	push	r0
- 1a6:	0f b6       	in	r0, 0x3f	; 63
- 1a8:	0f 92       	push	r0
- 1aa:	11 24       	eor	r1, r1
+ 1c8:	1f 92       	push	r1
+ 1ca:	0f 92       	push	r0
+ 1cc:	0f b6       	in	r0, 0x3f	; 63
+ 1ce:	0f 92       	push	r0
+ 1d0:	11 24       	eor	r1, r1
      
           
   }//ISR
- 1ac:	0f 90       	pop	r0
- 1ae:	0f be       	out	0x3f, r0	; 63
- 1b0:	0f 90       	pop	r0
- 1b2:	1f 90       	pop	r1
- 1b4:	18 95       	reti
+ 1d2:	0f 90       	pop	r0
+ 1d4:	0f be       	out	0x3f, r0	; 63
+ 1d6:	0f 90       	pop	r0
+ 1d8:	1f 90       	pop	r1
+ 1da:	18 95       	reti
 
-000001b6 <main>:
+000001dc <encoderY>:
+//*****************************************************************************************************/
+//*************ENCODER******************************************************************/
+void encoderY(void){
+  if((PINE & (1<<PE2)) && !(PINE & (1<<PE3))){
+ 1dc:	0a 9b       	sbis	0x01, 2	; 1
+ 1de:	02 c0       	rjmp	.+4      	; 0x1e4 <encoderY+0x8>
+ 1e0:	0b 9b       	sbis	0x01, 3	; 1
+ 1e2:	2a c0       	rjmp	.+84     	; 0x238 <encoderY+0x5c>
+                       if(state == x) {state = cw1;}
+                       else if(state == cw2) {state = x;}
+                       else if(state == ccw1) {state = ccw2;}
+                       
+                      }
+  if((PINE & (1<<PE3)) && !(PINE & (1<<PE2))){
+ 1e4:	0b 9b       	sbis	0x01, 3	; 1
+ 1e6:	02 c0       	rjmp	.+4      	; 0x1ec <encoderY+0x10>
+ 1e8:	0a 9b       	sbis	0x01, 2	; 1
+ 1ea:	14 c0       	rjmp	.+40     	; 0x214 <encoderY+0x38>
+                       if(state == cw1){state = cw2;}
+                       else if(state == x){state = ccw1;}
+                       else if(state == ccw2){state = x;}
+                       
+                      }
+  if((PINE & (1<<PE3)) && (PINE & (1<<PE2))){
+ 1ec:	0b 9b       	sbis	0x01, 3	; 1
+ 1ee:	11 c0       	rjmp	.+34     	; 0x212 <encoderY+0x36>
+ 1f0:	0a 9b       	sbis	0x01, 2	; 1
+ 1f2:	0f c0       	rjmp	.+30     	; 0x212 <encoderY+0x36>
+                       if(state == cw2){count++;}
+ 1f4:	80 91 01 01 	lds	r24, 0x0101
+ 1f8:	90 91 04 01 	lds	r25, 0x0104
+ 1fc:	89 17       	cp	r24, r25
+ 1fe:	09 f4       	brne	.+2      	; 0x202 <encoderY+0x26>
+ 200:	4d c0       	rjmp	.+154    	; 0x29c <encoderY+0xc0>
+                       else if(state == ccw2){count--;}
+ 202:	90 91 02 01 	lds	r25, 0x0102
+ 206:	89 17       	cp	r24, r25
+ 208:	59 f1       	breq	.+86     	; 0x260 <encoderY+0x84>
+                       state = x;
+ 20a:	80 91 00 01 	lds	r24, 0x0100
+ 20e:	80 93 01 01 	sts	0x0101, r24
+ 212:	08 95       	ret
+                       else if(state == cw2) {state = x;}
+                       else if(state == ccw1) {state = ccw2;}
+                       
+                      }
+  if((PINE & (1<<PE3)) && !(PINE & (1<<PE2))){
+                       if(state == cw1){state = cw2;}
+ 214:	80 91 01 01 	lds	r24, 0x0101
+ 218:	90 91 05 01 	lds	r25, 0x0105
+ 21c:	89 17       	cp	r24, r25
+ 21e:	c9 f1       	breq	.+114    	; 0x292 <encoderY+0xb6>
+                       else if(state == x){state = ccw1;}
+ 220:	90 91 00 01 	lds	r25, 0x0100
+ 224:	89 17       	cp	r24, r25
+ 226:	09 f4       	brne	.+2      	; 0x22a <encoderY+0x4e>
+ 228:	54 c0       	rjmp	.+168    	; 0x2d2 <encoderY+0xf6>
+                       else if(state == ccw2){state = x;}
+ 22a:	20 91 02 01 	lds	r18, 0x0102
+ 22e:	82 13       	cpse	r24, r18
+ 230:	dd cf       	rjmp	.-70     	; 0x1ec <encoderY+0x10>
+ 232:	90 93 01 01 	sts	0x0101, r25
+ 236:	da cf       	rjmp	.-76     	; 0x1ec <encoderY+0x10>
+  }//ISR
+//*****************************************************************************************************/
+//*************ENCODER******************************************************************/
+void encoderY(void){
+  if((PINE & (1<<PE2)) && !(PINE & (1<<PE3))){
+                       if(state == x) {state = cw1;}
+ 238:	80 91 01 01 	lds	r24, 0x0101
+ 23c:	90 91 00 01 	lds	r25, 0x0100
+ 240:	89 17       	cp	r24, r25
+ 242:	11 f1       	breq	.+68     	; 0x288 <encoderY+0xac>
+                       else if(state == cw2) {state = x;}
+ 244:	20 91 04 01 	lds	r18, 0x0104
+ 248:	82 17       	cp	r24, r18
+ 24a:	09 f4       	brne	.+2      	; 0x24e <encoderY+0x72>
+ 24c:	3f c0       	rjmp	.+126    	; 0x2cc <encoderY+0xf0>
+                       else if(state == ccw1) {state = ccw2;}
+ 24e:	90 91 03 01 	lds	r25, 0x0103
+ 252:	89 13       	cpse	r24, r25
+ 254:	c7 cf       	rjmp	.-114    	; 0x1e4 <encoderY+0x8>
+ 256:	80 91 02 01 	lds	r24, 0x0102
+ 25a:	80 93 01 01 	sts	0x0101, r24
+ 25e:	c2 cf       	rjmp	.-124    	; 0x1e4 <encoderY+0x8>
+                       else if(state == ccw2){state = x;}
+                       
+                      }
+  if((PINE & (1<<PE3)) && (PINE & (1<<PE2))){
+                       if(state == cw2){count++;}
+                       else if(state == ccw2){count--;}
+ 260:	80 91 06 01 	lds	r24, 0x0106
+ 264:	90 91 07 01 	lds	r25, 0x0107
+ 268:	a0 91 08 01 	lds	r26, 0x0108
+ 26c:	b0 91 09 01 	lds	r27, 0x0109
+ 270:	01 97       	sbiw	r24, 0x01	; 1
+ 272:	a1 09       	sbc	r26, r1
+ 274:	b1 09       	sbc	r27, r1
+ 276:	80 93 06 01 	sts	0x0106, r24
+ 27a:	90 93 07 01 	sts	0x0107, r25
+ 27e:	a0 93 08 01 	sts	0x0108, r26
+ 282:	b0 93 09 01 	sts	0x0109, r27
+ 286:	c1 cf       	rjmp	.-126    	; 0x20a <encoderY+0x2e>
+  }//ISR
+//*****************************************************************************************************/
+//*************ENCODER******************************************************************/
+void encoderY(void){
+  if((PINE & (1<<PE2)) && !(PINE & (1<<PE3))){
+                       if(state == x) {state = cw1;}
+ 288:	80 91 05 01 	lds	r24, 0x0105
+ 28c:	80 93 01 01 	sts	0x0101, r24
+ 290:	a9 cf       	rjmp	.-174    	; 0x1e4 <encoderY+0x8>
+                       else if(state == cw2) {state = x;}
+                       else if(state == ccw1) {state = ccw2;}
+                       
+                      }
+  if((PINE & (1<<PE3)) && !(PINE & (1<<PE2))){
+                       if(state == cw1){state = cw2;}
+ 292:	80 91 04 01 	lds	r24, 0x0104
+ 296:	80 93 01 01 	sts	0x0101, r24
+ 29a:	a8 cf       	rjmp	.-176    	; 0x1ec <encoderY+0x10>
+                       else if(state == x){state = ccw1;}
+                       else if(state == ccw2){state = x;}
+                       
+                      }
+  if((PINE & (1<<PE3)) && (PINE & (1<<PE2))){
+                       if(state == cw2){count++;}
+ 29c:	80 91 06 01 	lds	r24, 0x0106
+ 2a0:	90 91 07 01 	lds	r25, 0x0107
+ 2a4:	a0 91 08 01 	lds	r26, 0x0108
+ 2a8:	b0 91 09 01 	lds	r27, 0x0109
+ 2ac:	01 96       	adiw	r24, 0x01	; 1
+ 2ae:	a1 1d       	adc	r26, r1
+ 2b0:	b1 1d       	adc	r27, r1
+ 2b2:	80 93 06 01 	sts	0x0106, r24
+ 2b6:	90 93 07 01 	sts	0x0107, r25
+ 2ba:	a0 93 08 01 	sts	0x0108, r26
+ 2be:	b0 93 09 01 	sts	0x0109, r27
+                       else if(state == ccw2){count--;}
+                       state = x;
+ 2c2:	80 91 00 01 	lds	r24, 0x0100
+ 2c6:	80 93 01 01 	sts	0x0101, r24
+ 2ca:	a3 cf       	rjmp	.-186    	; 0x212 <encoderY+0x36>
+//*****************************************************************************************************/
+//*************ENCODER******************************************************************/
+void encoderY(void){
+  if((PINE & (1<<PE2)) && !(PINE & (1<<PE3))){
+                       if(state == x) {state = cw1;}
+                       else if(state == cw2) {state = x;}
+ 2cc:	90 93 01 01 	sts	0x0101, r25
+ 2d0:	89 cf       	rjmp	.-238    	; 0x1e4 <encoderY+0x8>
+                       else if(state == ccw1) {state = ccw2;}
+                       
+                      }
+  if((PINE & (1<<PE3)) && !(PINE & (1<<PE2))){
+                       if(state == cw1){state = cw2;}
+                       else if(state == x){state = ccw1;}
+ 2d2:	80 91 03 01 	lds	r24, 0x0103
+ 2d6:	80 93 01 01 	sts	0x0101, r24
+ 2da:	88 cf       	rjmp	.-240    	; 0x1ec <encoderY+0x10>
+
+000002dc <main>:
 //**************************************************MAIN************************************************/ 
 //***************************************************MAIN***********************************************/
 //****************************************************MAIN**********************************************/
 int main(){
 
-  timer2_init();         //PWM Y_Axis
- 1b6:	0e 94 80 00 	call	0x100	; 0x100 <timer2_init>
-//*****************************************************************************************************/
-//******PORT INIT**************************************************************************************/
-
- void port_init(void){
-
-  DDRB |= (1<<PB7); //PB7 (PWM)
- 1ba:	bf 9a       	sbi	0x17, 7	; 23
-  DDRB |= (1<<PB4); //LED4 as output 
- 1bc:	bc 9a       	sbi	0x17, 4	; 23
-  DDRA = 0x00;       //set buttons for inputs.  
- 1be:	1a ba       	out	0x1a, r1	; 26
-  PORTA = 0xFF;      //Set pullups for buttons
- 1c0:	8f ef       	ldi	r24, 0xFF	; 255
- 1c2:	8b bb       	out	0x1b, r24	; 27
-  timer2_init();         //PWM Y_Axis
-  //timer0_init();         //Real Time clock
+  timer2_init();         //PWM Y_Axis, PB7
+ 2dc:	0e 94 85 00 	call	0x10a	; 0x10a <timer2_init>
+  //timer0_init();         //PWM_X_Axis PB4
   //spi_init();            //SPI init
   //adc_init();            //ADC init for PF0
   port_init();           //PORT INIT 
-  sei();                 //enable interupts
- 1c4:	78 94       	sei
- 1c6:	80 91 02 01 	lds	r24, 0x0102
- 1ca:	90 91 03 01 	lds	r25, 0x0103
+ 2e0:	0e 94 ab 00 	call	0x156	; 0x156 <port_init>
+  sei();               //enable interupts
+ 2e4:	78 94       	sei
+ 2e6:	80 90 0d 01 	lds	r8, 0x010D
+ 2ea:	90 90 0e 01 	lds	r9, 0x010E
+ 2ee:	77 24       	eor	r7, r7
+ 2f0:	73 94       	inc	r7
+///////////////////////////  Y-AXIS  ////////////////////////////////////////
+    if(debounce(0)){//IF button S1 is pressed, Y-Axis goes RIGHT
+       PORTB |= (1<<PB0);  //turn on LED1, puts high on standby pin on H-bridge (enable)
+       PORTB |= (1<<PB5);  //pin5 to Ain1 (Y-axis)
+       PORTB &= ~(1<<PB6); //pin6 to Ain2 (Y-axis)
+       PWM_Y = 0xFE;       //Duty cycle (Y-axis)
+ 2f2:	ee ef       	ldi	r30, 0xFE	; 254
+ 2f4:	5e 2e       	mov	r5, r30
+       PWM_Y = 0x00;        //Duty cycle (Y-axis)
+       DDRB &= ~(1<<PB7);   //Turn off PWM (Y-axis)
+    }//if
+///////////////////////////////  X-AXIS  ////////////////////////////////////////
+   if(debounce(3)){//IF button S4 is pressed, X-Axis goes RIGHT  
+       PWM_X = 0xA0;       //Duty cycle (X-axis)
+ 2f6:	f0 ea       	ldi	r31, 0xA0	; 160
+ 2f8:	6f 2e       	mov	r6, r31
+ 2fa:	73 c0       	rjmp	.+230    	; 0x3e2 <main+0x106>
 //****************************************************************************************************/
 //************DEBOUNCE**Takes in button**Returns true if pressed***************************************/
  
-  int8_t debounce_switch(uint8_t button) {
-    static uint16_t state = 0; //holds present state 
-    state = (state << 1) | (! bit_is_clear(PINA, button))| 0xE000;
- 1ce:	29 b3       	in	r18, 0x19	; 25
- 1d0:	88 0f       	add	r24, r24
- 1d2:	99 1f       	adc	r25, r25
- 1d4:	90 6e       	ori	r25, 0xE0	; 224
- 1d6:	21 70       	andi	r18, 0x01	; 1
- 1d8:	c2 2f       	mov	r28, r18
- 1da:	20 e0       	ldi	r18, 0x00	; 0
- 1dc:	d2 2f       	mov	r29, r18
- 1de:	8c 2b       	or	r24, r28
- 1e0:	9d 2b       	or	r25, r29
- 1e2:	90 93 03 01 	sts	0x0103, r25
- 1e6:	80 93 02 01 	sts	0x0102, r24
-    if (state == 0xF000) return 1;
- 1ea:	81 15       	cp	r24, r1
- 1ec:	20 ef       	ldi	r18, 0xF0	; 240
- 1ee:	92 07       	cpc	r25, r18
- 1f0:	71 f7       	brne	.-36     	; 0x1ce <main+0x18>
-  sei();                 //enable interupts
+  int8_t debounce(uint8_t button) {
+    static uint16_t state1 = 0; //holds present state 
+    state1 = (state1 << 1) | ( bit_is_clear(PIND, button))| 0xE000;
+ 2fc:	20 b3       	in	r18, 0x10	; 16
+ 2fe:	26 95       	lsr	r18
+ 300:	21 70       	andi	r18, 0x01	; 1
+ 302:	c2 2f       	mov	r28, r18
+ 304:	20 e0       	ldi	r18, 0x00	; 0
+ 306:	d2 2f       	mov	r29, r18
+ 308:	21 e0       	ldi	r18, 0x01	; 1
+ 30a:	c2 27       	eor	r28, r18
+ 30c:	d0 6e       	ori	r29, 0xE0	; 224
+ 30e:	88 0f       	add	r24, r24
+ 310:	99 1f       	adc	r25, r25
+ 312:	c8 2b       	or	r28, r24
+ 314:	d9 2b       	or	r29, r25
+ 316:	d0 93 0e 01 	sts	0x010E, r29
+ 31a:	c0 93 0d 01 	sts	0x010D, r28
+    if (state1 == 0xF000) return 1;
+ 31e:	c1 15       	cp	r28, r1
+ 320:	80 ef       	ldi	r24, 0xF0	; 240
+ 322:	d8 07       	cpc	r29, r24
+ 324:	09 f4       	brne	.+2      	; 0x328 <main+0x4c>
+ 326:	a2 c0       	rjmp	.+324    	; 0x46c <main+0x190>
+ 328:	ce 01       	movw	r24, r28
+//****************************************************************************************************/
+//************DEBOUNCE**Takes in button**Returns true if pressed***************************************/
+ 
+  int8_t debounce(uint8_t button) {
+    static uint16_t state1 = 0; //holds present state 
+    state1 = (state1 << 1) | ( bit_is_clear(PIND, button))| 0xE000;
+ 32a:	20 b3       	in	r18, 0x10	; 16
+ 32c:	22 fb       	bst	r18, 2
+ 32e:	00 27       	eor	r16, r16
+ 330:	00 f9       	bld	r16, 0
+ 332:	10 e0       	ldi	r17, 0x00	; 0
+ 334:	21 e0       	ldi	r18, 0x01	; 1
+ 336:	02 27       	eor	r16, r18
+ 338:	10 6e       	ori	r17, 0xE0	; 224
+ 33a:	88 0f       	add	r24, r24
+ 33c:	99 1f       	adc	r25, r25
+ 33e:	08 2b       	or	r16, r24
+ 340:	19 2b       	or	r17, r25
+ 342:	10 93 0e 01 	sts	0x010E, r17
+ 346:	00 93 0d 01 	sts	0x010D, r16
+    if (state1 == 0xF000) return 1;
+ 34a:	01 15       	cp	r16, r1
+ 34c:	80 ef       	ldi	r24, 0xF0	; 240
+ 34e:	18 07       	cpc	r17, r24
+ 350:	09 f4       	brne	.+2      	; 0x354 <main+0x78>
+ 352:	81 c0       	rjmp	.+258    	; 0x456 <main+0x17a>
+ 354:	c8 01       	movw	r24, r16
+//****************************************************************************************************/
+//************DEBOUNCE**Takes in button**Returns true if pressed***************************************/
+ 
+  int8_t debounce(uint8_t button) {
+    static uint16_t state1 = 0; //holds present state 
+    state1 = (state1 << 1) | ( bit_is_clear(PIND, button))| 0xE000;
+ 356:	20 b3       	in	r18, 0x10	; 16
+ 358:	23 fb       	bst	r18, 3
+ 35a:	ee 24       	eor	r14, r14
+ 35c:	e0 f8       	bld	r14, 0
+ 35e:	f1 2c       	mov	r15, r1
+ 360:	21 e0       	ldi	r18, 0x01	; 1
+ 362:	e2 26       	eor	r14, r18
+ 364:	20 ee       	ldi	r18, 0xE0	; 224
+ 366:	f2 2a       	or	r15, r18
+ 368:	88 0f       	add	r24, r24
+ 36a:	99 1f       	adc	r25, r25
+ 36c:	e8 2a       	or	r14, r24
+ 36e:	f9 2a       	or	r15, r25
+ 370:	f0 92 0e 01 	sts	0x010E, r15
+ 374:	e0 92 0d 01 	sts	0x010D, r14
+    if (state1 == 0xF000) return 1;
+ 378:	e1 14       	cp	r14, r1
+ 37a:	80 ef       	ldi	r24, 0xF0	; 240
+ 37c:	f8 06       	cpc	r15, r24
+ 37e:	09 f4       	brne	.+2      	; 0x382 <main+0xa6>
+ 380:	62 c0       	rjmp	.+196    	; 0x446 <main+0x16a>
+ 382:	c7 01       	movw	r24, r14
+//****************************************************************************************************/
+//************DEBOUNCE**Takes in button**Returns true if pressed***************************************/
+ 
+  int8_t debounce(uint8_t button) {
+    static uint16_t state1 = 0; //holds present state 
+    state1 = (state1 << 1) | ( bit_is_clear(PIND, button))| 0xE000;
+ 384:	20 b3       	in	r18, 0x10	; 16
+ 386:	24 fb       	bst	r18, 4
+ 388:	cc 24       	eor	r12, r12
+ 38a:	c0 f8       	bld	r12, 0
+ 38c:	d1 2c       	mov	r13, r1
+ 38e:	21 e0       	ldi	r18, 0x01	; 1
+ 390:	c2 26       	eor	r12, r18
+ 392:	20 ee       	ldi	r18, 0xE0	; 224
+ 394:	d2 2a       	or	r13, r18
+ 396:	88 0f       	add	r24, r24
+ 398:	99 1f       	adc	r25, r25
+ 39a:	c8 2a       	or	r12, r24
+ 39c:	d9 2a       	or	r13, r25
+ 39e:	d0 92 0e 01 	sts	0x010E, r13
+ 3a2:	c0 92 0d 01 	sts	0x010D, r12
+    if (state1 == 0xF000) return 1;
+ 3a6:	c1 14       	cp	r12, r1
+ 3a8:	80 ef       	ldi	r24, 0xF0	; 240
+ 3aa:	d8 06       	cpc	r13, r24
+ 3ac:	09 f4       	brne	.+2      	; 0x3b0 <main+0xd4>
+ 3ae:	43 c0       	rjmp	.+134    	; 0x436 <main+0x15a>
+ 3b0:	c6 01       	movw	r24, r12
+//****************************************************************************************************/
+//************DEBOUNCE**Takes in button**Returns true if pressed***************************************/
+ 
+  int8_t debounce(uint8_t button) {
+    static uint16_t state1 = 0; //holds present state 
+    state1 = (state1 << 1) | ( bit_is_clear(PIND, button))| 0xE000;
+ 3b2:	20 b3       	in	r18, 0x10	; 16
+ 3b4:	25 fb       	bst	r18, 5
+ 3b6:	aa 24       	eor	r10, r10
+ 3b8:	a0 f8       	bld	r10, 0
+ 3ba:	b1 2c       	mov	r11, r1
+ 3bc:	21 e0       	ldi	r18, 0x01	; 1
+ 3be:	a2 26       	eor	r10, r18
+ 3c0:	20 ee       	ldi	r18, 0xE0	; 224
+ 3c2:	b2 2a       	or	r11, r18
+ 3c4:	88 0f       	add	r24, r24
+ 3c6:	99 1f       	adc	r25, r25
+ 3c8:	a8 2a       	or	r10, r24
+ 3ca:	b9 2a       	or	r11, r25
+ 3cc:	b0 92 0e 01 	sts	0x010E, r11
+ 3d0:	a0 92 0d 01 	sts	0x010D, r10
+    if (state1 == 0xF000) return 1;
+ 3d4:	a1 14       	cp	r10, r1
+ 3d6:	80 ef       	ldi	r24, 0xF0	; 240
+ 3d8:	b8 06       	cpc	r11, r24
+ 3da:	09 f1       	breq	.+66     	; 0x41e <main+0x142>
+ 3dc:	45 01       	movw	r8, r10
+       DDRB &= ~(1<<PB4);   //Turn off PWM (X-axis)
+    }//if
+///////////////////////  TEST CODE  ///////////////////////////////////////////////////
+    /*if(count == 59750){PORTB |= (1<<PB1);}// encoder limit test code
+     else(PORTB &= ~(1<<PB1));*/
+   if(PINC & (1<<PC0)){PWM_Y = 0x00;}//mini-beam test code
+ 3de:	98 99       	sbic	0x13, 0	; 19
+ 3e0:	27 c0       	rjmp	.+78     	; 0x430 <main+0x154>
+  //adc_init();            //ADC init for PF0
+  port_init();           //PORT INIT 
+  sei();               //enable interupts
   
   while (1) {
+    encoderY();
+ 3e2:	0e 94 ee 00 	call	0x1dc	; 0x1dc <encoderY>
+//****************************************************************************************************/
+//************DEBOUNCE**Takes in button**Returns true if pressed***************************************/
+ 
+  int8_t debounce(uint8_t button) {
+    static uint16_t state1 = 0; //holds present state 
+    state1 = (state1 << 1) | ( bit_is_clear(PIND, button))| 0xE000;
+ 3e6:	20 b3       	in	r18, 0x10	; 16
+ 3e8:	c4 01       	movw	r24, r8
+ 3ea:	88 0f       	add	r24, r24
+ 3ec:	99 1f       	adc	r25, r25
+ 3ee:	90 6e       	ori	r25, 0xE0	; 224
+ 3f0:	21 70       	andi	r18, 0x01	; 1
+ 3f2:	27 25       	eor	r18, r7
+ 3f4:	82 2b       	or	r24, r18
+ 3f6:	90 93 0e 01 	sts	0x010E, r25
+ 3fa:	80 93 0d 01 	sts	0x010D, r24
+    if (state1 == 0xF000) return 1;
+ 3fe:	81 15       	cp	r24, r1
+ 400:	20 ef       	ldi	r18, 0xF0	; 240
+ 402:	92 07       	cpc	r25, r18
+ 404:	09 f0       	breq	.+2      	; 0x408 <main+0x12c>
+ 406:	7a cf       	rjmp	.-268    	; 0x2fc <main+0x20>
+  
+  while (1) {
+    encoderY();
+///////////////////////////  Y-AXIS  ////////////////////////////////////////
+    if(debounce(0)){//IF button S1 is pressed, Y-Axis goes RIGHT
+       PORTB |= (1<<PB0);  //turn on LED1, puts high on standby pin on H-bridge (enable)
+ 408:	c0 9a       	sbi	0x18, 0	; 24
+       PORTB |= (1<<PB5);  //pin5 to Ain1 (Y-axis)
+ 40a:	c5 9a       	sbi	0x18, 5	; 24
+       PORTB &= ~(1<<PB6); //pin6 to Ain2 (Y-axis)
+ 40c:	c6 98       	cbi	0x18, 6	; 24
+       PWM_Y = 0xFE;       //Duty cycle (Y-axis)
+ 40e:	50 92 0c 01 	sts	0x010C, r5
+       DDRB |= (1<<PB7);   //Turn on PWM (Y-axis)
+ 412:	bf 9a       	sbi	0x17, 7	; 23
+ 414:	80 91 0d 01 	lds	r24, 0x010D
+ 418:	90 91 0e 01 	lds	r25, 0x010E
+ 41c:	6f cf       	rjmp	.-290    	; 0x2fc <main+0x20>
+       PWM_Y = 0xA0;       //Duty cycle (X-axis)
+       DDRB |= (1<<PB4);   //Turn on PWM (X-axis)
+    }//if
+    
+    if(debounce(5)){//IF button S6 is pressed, X-Axis STOP   
+       PWM_Y = 0x00;        //Duty cycle (X-axis)
+ 41e:	10 92 0c 01 	sts	0x010C, r1
+       DDRB &= ~(1<<PB4);   //Turn off PWM (X-axis)
+ 422:	bc 98       	cbi	0x17, 4	; 23
+ 424:	80 90 0d 01 	lds	r8, 0x010D
+ 428:	90 90 0e 01 	lds	r9, 0x010E
+    }//if
+///////////////////////  TEST CODE  ///////////////////////////////////////////////////
+    /*if(count == 59750){PORTB |= (1<<PB1);}// encoder limit test code
+     else(PORTB &= ~(1<<PB1));*/
+   if(PINC & (1<<PC0)){PWM_Y = 0x00;}//mini-beam test code
+ 42c:	98 9b       	sbis	0x13, 0	; 19
+ 42e:	d9 cf       	rjmp	.-78     	; 0x3e2 <main+0x106>
+ 430:	10 92 0c 01 	sts	0x010C, r1
+ 434:	d6 cf       	rjmp	.-84     	; 0x3e2 <main+0x106>
+       PWM_X = 0xA0;       //Duty cycle (X-axis)
+       DDRB |= (1<<PB4);   //Turn on PWM (X-axis)
+    }//if
+    
+    if(debounce(4)){//IF button S5 is pressed, X-Axis goes LEFT
+       PWM_Y = 0xA0;       //Duty cycle (X-axis)
+ 436:	60 92 0c 01 	sts	0x010C, r6
+       DDRB |= (1<<PB4);   //Turn on PWM (X-axis)
+ 43a:	bc 9a       	sbi	0x17, 4	; 23
+ 43c:	80 91 0d 01 	lds	r24, 0x010D
+ 440:	90 91 0e 01 	lds	r25, 0x010E
+ 444:	b6 cf       	rjmp	.-148    	; 0x3b2 <main+0xd6>
+       PWM_Y = 0x00;        //Duty cycle (Y-axis)
+       DDRB &= ~(1<<PB7);   //Turn off PWM (Y-axis)
+    }//if
+///////////////////////////////  X-AXIS  ////////////////////////////////////////
+   if(debounce(3)){//IF button S4 is pressed, X-Axis goes RIGHT  
+       PWM_X = 0xA0;       //Duty cycle (X-axis)
+ 446:	60 92 0b 01 	sts	0x010B, r6
+       DDRB |= (1<<PB4);   //Turn on PWM (X-axis)
+ 44a:	bc 9a       	sbi	0x17, 4	; 23
+ 44c:	80 91 0d 01 	lds	r24, 0x010D
+ 450:	90 91 0e 01 	lds	r25, 0x010E
+ 454:	97 cf       	rjmp	.-210    	; 0x384 <main+0xa8>
+       PWM_Y = 0xFE;       //Duty cycle (Y-axis)
+       DDRB |= (1<<PB7);   //Turn on PWM (Y-axis)
+    }//if
+    
+    if(debounce(2)){//IF button S3 is pressed, Y-Axis STOP
+       PORTB &= ~(1<<PB0);  //turn off LED1, puts low on standby pin on H-bridge (disenable)
+ 456:	c0 98       	cbi	0x18, 0	; 24
+       PORTB &= ~(1<<PB5); //pin5 to Ain1 (Y-axis)
+ 458:	c5 98       	cbi	0x18, 5	; 24
+       PORTB &= ~(1<<PB6);  //pin6 to Ain2 (Y-axis)
+ 45a:	c6 98       	cbi	0x18, 6	; 24
+       PWM_Y = 0x00;        //Duty cycle (Y-axis)
+ 45c:	10 92 0c 01 	sts	0x010C, r1
+       DDRB &= ~(1<<PB7);   //Turn off PWM (Y-axis)
+ 460:	bf 98       	cbi	0x17, 7	; 23
+ 462:	80 91 0d 01 	lds	r24, 0x010D
+ 466:	90 91 0e 01 	lds	r25, 0x010E
+ 46a:	75 cf       	rjmp	.-278    	; 0x356 <main+0x7a>
+       PWM_Y = 0xFE;       //Duty cycle (Y-axis)
+       DDRB |= (1<<PB7);   //Turn on PWM (Y-axis)
+    }//if
+    
+    if(debounce(1)){//IF button S2 is pressed, Y-Axis goes LEFT
+       PORTB |= (1<<PB0);  //turn on LED1, puts high on standby pin on H-bridge (enable)
+ 46c:	c0 9a       	sbi	0x18, 0	; 24
+       PORTB &= ~(1<<PB5); //pin5 to Ain1 (Y-axis)
+ 46e:	c5 98       	cbi	0x18, 5	; 24
+       PORTB |= (1<<PB6);  //pin6 to Ain2 (Y-axis)
+ 470:	c6 9a       	sbi	0x18, 6	; 24
+       PWM_Y = 0xFE;       //Duty cycle (Y-axis)
+ 472:	50 92 0c 01 	sts	0x010C, r5
+       DDRB |= (1<<PB7);   //Turn on PWM (Y-axis)
+ 476:	bf 9a       	sbi	0x17, 7	; 23
+ 478:	80 91 0d 01 	lds	r24, 0x010D
+ 47c:	90 91 0e 01 	lds	r25, 0x010E
+ 480:	54 cf       	rjmp	.-344    	; 0x32a <main+0x4e>
 
-    if((debounce_switch(0))){//IF button S1 is pressed
-       PORTB |= (1<<PB4);  //turn on LED4
- 1f2:	c4 9a       	sbi	0x18, 4	; 24
- 1f4:	e8 cf       	rjmp	.-48     	; 0x1c6 <main+0x10>
+00000482 <_exit>:
+ 482:	f8 94       	cli
 
-000001f6 <_exit>:
- 1f6:	f8 94       	cli
-
-000001f8 <__stop_program>:
- 1f8:	ff cf       	rjmp	.-2      	; 0x1f8 <__stop_program>
+00000484 <__stop_program>:
+ 484:	ff cf       	rjmp	.-2      	; 0x484 <__stop_program>
