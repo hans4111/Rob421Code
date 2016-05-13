@@ -674,7 +674,7 @@ int main(){
  3a2:	bc 98       	cbi	0x17, 4	; 23
 	 }
 ////////////////////////////// Test Code /////////////////////////////////////
-	if(Xcount == 1000){
+	if(Xcount >= 1000){
  3a4:	80 91 0c 01 	lds	r24, 0x010C
  3a8:	90 91 0d 01 	lds	r25, 0x010D
  3ac:	a0 91 0e 01 	lds	r26, 0x010E
@@ -683,13 +683,13 @@ int main(){
  3b6:	93 40       	sbci	r25, 0x03	; 3
  3b8:	a1 05       	cpc	r26, r1
  3ba:	b1 05       	cpc	r27, r1
- 3bc:	19 f4       	brne	.+6      	; 0x3c4 <main+0xa2>
+ 3bc:	1c f0       	brlt	.+6      	; 0x3c4 <main+0xa2>
 		PWM_X = 0;
  3be:	10 92 10 01 	sts	0x0110, r1
 		DDRB &= ~(1<<PB4);
  3c2:	bc 98       	cbi	0x17, 4	; 23
 	}
-	if(Ycount == 10000){
+	if(Ycount >= 10000){
  3c4:	80 91 08 01 	lds	r24, 0x0108
  3c8:	90 91 09 01 	lds	r25, 0x0109
  3cc:	a0 91 0a 01 	lds	r26, 0x010A
@@ -698,7 +698,7 @@ int main(){
  3d6:	97 42       	sbci	r25, 0x27	; 39
  3d8:	a1 05       	cpc	r26, r1
  3da:	b1 05       	cpc	r27, r1
- 3dc:	09 f0       	breq	.+2      	; 0x3e0 <main+0xbe>
+ 3dc:	0c f4       	brge	.+2      	; 0x3e0 <main+0xbe>
  3de:	a9 cf       	rjmp	.-174    	; 0x332 <main+0x10>
 		PWM_Y = 0;
  3e0:	10 92 11 01 	sts	0x0111, r1

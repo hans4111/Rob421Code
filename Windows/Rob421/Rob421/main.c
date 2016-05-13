@@ -256,11 +256,11 @@ int main(){
 		 DDRB &= ~(1<<PB4);   //Turn off PWM (X-axis)
 	 }
 ////////////////////////////// Test Code /////////////////////////////////////
-	if(Xcount == 1000){
+	if(Xcount >= 1000){
 		PWM_X = 0;
 		DDRB &= ~(1<<PB4);
 	}
-	if(Ycount == 10000){
+	if(Ycount >= 10000){
 		PWM_Y = 0;
 		DDRB &= ~(1<<PB7);
 	}
